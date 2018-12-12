@@ -1,16 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿public class ChangeScoreRequestEvent : CodeControl.Message
+{
+    public int change;
 
-public class ChangeScoreRequestEvent : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public ChangeScoreRequestEvent(int change)
+    {
+        this.change = change;
+    }
 }

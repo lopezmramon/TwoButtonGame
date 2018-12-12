@@ -1,16 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Tile : MonoBehaviour {
+public class Tile
+{
+    public Vector2Int coordinates;
+    public TileType type;
+    public int inhabitantIndex;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public Tile(Vector2Int coordinates, TileType type, int inhabitantIndex)
+    {
+        this.coordinates = coordinates;
+        this.type = type;
+        this.inhabitantIndex = inhabitantIndex;
+    }
 }
