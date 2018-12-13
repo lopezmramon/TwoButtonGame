@@ -9,8 +9,7 @@ public class ViewChangeManager : MonoBehaviour
     private void Awake()
     {
         CodeControl.Message.AddListener<ChangeViewRequestEvent>(OnViewChangeRequested);        
-    }
-   
+    }   
 
     private void OnViewChangeRequested(ChangeViewRequestEvent obj)
     {

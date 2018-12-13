@@ -21,7 +21,7 @@ public class TileGridGenerator
                 {
                     previous5Tiles[p] = tiles[i - p, j];
                 }
-                tiles[i, j] = new Tile(tileCoordinates, RandomType(previous5Tiles), 0);
+                tiles[i, j] = new Tile(tileCoordinates, RandomType(previous5Tiles), 0, Biome.Woods);
             }
         }
         return tiles;
@@ -41,7 +41,7 @@ public class TileGridGenerator
                 {
                     previous5Tiles[p] = tiles[i - p, j];
                 }
-                tiles[i, j] = new Tile(tileCoordinates, RandomType(previous5Tiles), 0);
+                tiles[i, j] = new Tile(tileCoordinates, RandomType(previous5Tiles), 0, Biome.Woods);
             }
         }
         return tiles;
